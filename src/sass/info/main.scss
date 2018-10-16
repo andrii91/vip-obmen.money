@@ -1,0 +1,72 @@
+@import 'variables';
+
+*{
+  outline: none;
+}
+a:focus, a:hover, input:focus, input:hover {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  @import 'MediaQueries/main';
+  overflow-x: hidden;
+}
+
+.nav-top {
+  background: #252928;
+  padding: 10px 0;
+}
+
+.contacts-top {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 44px;
+    a {
+      display: block;
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 29.33px;
+      letter-spacing: 0.32px;
+      transition: 0.2;
+      &:hover {
+        img {
+          transform: scale(0.9);
+        }
+      }
+      img {
+        margin-right: 12px;
+      transition: 0.2;
+        
+      }
+    }
+  }
+}
+
+.login {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    margin: 0 10px;
+    a {
+      color: #ffffff;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: italic;
+      line-height: 29.33px;
+      letter-spacing: 0.32px;
+      display: block;
+      transition: 0.2;
+      &:hover {
+        font-style: normal;
+      }
+    }
+  }
+}
